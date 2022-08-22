@@ -1,0 +1,24 @@
+---
+title: "R for Data Science"
+output: html_document
+date: "2022-08-22"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Exercise Chapter #1
+
+```{r}
+library(tidyverse)
+```
+
+1. What's gone wrong with this code? Why are the points not blue?
+
+```{r}
+ggplot(data = mpg) +
+  geom_point()
+```
+
+
