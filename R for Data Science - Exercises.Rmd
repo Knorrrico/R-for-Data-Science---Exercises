@@ -18,7 +18,16 @@ library(tidyverse)
 
 ```{r}
 ggplot(data = mpg) +
-  geom_point()
+  geom_point(
+    mapping = aes(x = displ, y = hwy, color = "blue")
+  )
 ```
+Answer: The color aesthetic isn't part of aes(). It goes on the outside.
 
+```{r}
+ggplot(data = mpg) +
+  geom_point(
+    mapping = aes(x = displ, y = hwy), color = "blue")
+  )
+```
 
