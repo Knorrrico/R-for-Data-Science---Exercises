@@ -1,6 +1,6 @@
 ---
 title: "R for Data Science"
-output: html_document
+output: html_notebook
 date: "2022-08-22"
 ---
 
