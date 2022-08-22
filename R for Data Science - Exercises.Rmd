@@ -4,17 +4,14 @@ output: html_notebook
 date: "2022-08-22"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-Exercise Chapter #1
+## Exercise Chapter #1
 
 ```{r}
 library(tidyverse)
 ```
 
-1. What's gone wrong with this code? Why are the points not blue?
+### 1. What's gone wrong with this code? Why are the points not blue?
 
 ```{r}
 ggplot(data = mpg) +
@@ -22,7 +19,7 @@ ggplot(data = mpg) +
     mapping = aes(x = displ, y = hwy, color = "blue")
   )
 ```
-Answer: The color aesthetic isn't part of aes(). It goes on the outside.
+#### Answer: The color aesthetic isn't part of aes(). It goes on the outside.
 
 ```{r}
 ggplot(data = mpg) +
@@ -31,3 +28,12 @@ ggplot(data = mpg) +
   )
 ```
 
+### 2. Which variables in `mpg` are categorical? 
+
+```{r}
+mpg
+```
+
+
+### Which variables are continuous?
+### How can you see this information when you run `mpg`?
